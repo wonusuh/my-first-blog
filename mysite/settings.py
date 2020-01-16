@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '=sa2^hz_rlqu@=@eruc5&khv&^32tusyv2ofrj(qomxf5b1=(+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
@@ -123,7 +123,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # 서비스 단계에서 정적파일을 한곳에 모아둔 곳
 # debug가 true이면 작동하지 않는다.
- STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # 개발 단계에서 정적파일들의 위치
 # STATICFILES_DIRS = (
 #    os.path.join(BASE_DIR, "static"),
